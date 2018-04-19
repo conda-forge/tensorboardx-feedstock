@@ -7,23 +7,24 @@ package:
   version: {{ version }}
 
 source:
-  fn: v{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/lanpa/tensorboard-pytorch/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - numpy
-    - protobuf
+    - protobuf >=0.3.2
+    - six
 
 test:
   imports:
