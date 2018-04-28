@@ -1,6 +1,6 @@
 {% set name = "tensorboardx" %}
-{% set version = "1.0" %}
-{% set sha256 = "33d761b902dd3a3bc9b48d1a5921f6ee99878e612385e52826c12438c99741fe" %}
+{% set version = "1.2" %}
+{% set sha256 = "32bdc92f2050260c46ac00e91d1577a0ed6fb4d148acaa36e2cbdb9b4bc06929" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
