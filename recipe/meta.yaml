@@ -43,6 +43,7 @@ about:
   home: https://github.com/lanpa/tensorboard-pytorch
   license: MIT
   license_family: MIT
+  license_file: LICENSE
   summary: tensorboard for pytorch
 
   description: |
