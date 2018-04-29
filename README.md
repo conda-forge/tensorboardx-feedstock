@@ -15,12 +15,15 @@ Write tensorboard events from PyTorch (and Chainer, MXNet, NumPy, ...)
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/tensorboardx-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tensorboardx-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/tensorboardx-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/tensorboardx-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tensorboardx/badges/version.svg)](https://anaconda.org/conda-forge/tensorboardx)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tensorboardx/badges/downloads.svg)](https://anaconda.org/conda-forge/tensorboardx)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-tensorboardx-green.svg)](https://anaconda.org/conda-forge/tensorboardx) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/tensorboardx.svg)](https://anaconda.org/conda-forge/tensorboardx) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/tensorboardx.svg)](https://anaconda.org/conda-forge/tensorboardx) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/tensorboardx.svg)](https://anaconda.org/conda-forge/tensorboardx) |
 
 Installing tensorboardx
 =======================

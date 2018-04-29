@@ -1,6 +1,6 @@
-{% set name = "tensorboardx" %}
-{% set version = "1.0" %}
-{% set sha256 = "33d761b902dd3a3bc9b48d1a5921f6ee99878e612385e52826c12438c99741fe" %}
+{% set name = "tensorboardX" %}
+{% set version = "1.2" %}
+{% set sha256 = "711ad14bc36bb563474cbb2219fef0a466c9a822e7cf2bf1e2ca11a7dbdc8224" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/lanpa/tensorboard-pytorch/archive/v{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -43,6 +43,7 @@ about:
   home: https://github.com/lanpa/tensorboard-pytorch
   license: MIT
   license_family: MIT
+  license_file: LICENSE
   summary: tensorboard for pytorch
 
   description: |
