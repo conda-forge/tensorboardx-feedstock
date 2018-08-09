@@ -32,7 +32,6 @@ test:
     - tensorboardX.crc32c
     - tensorboardX.embedding
     - tensorboardX.event_file_writer
-    - tensorboardX.graph
     - tensorboardX.graph_onnx
     - tensorboardX.record_writer
     - tensorboardX.summary
