@@ -39,7 +39,7 @@ test:
     - tensorboardX.x2num
 
 about:
-  home: https://github.com/lanpa/tensorboard-pytorch
+  home: https://github.com/lanpa/tensorboardx
   license: MIT
   license_family: MIT
   license_file: LICENSE
