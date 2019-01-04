@@ -47,8 +47,8 @@ about:
 
   description: |
     Write tensorboard events from PyTorch (and Chainer, MXNet, NumPy, ...)
-  doc_url: http://tensorboard-pytorch.readthedocs.io/en/latest/
-  dev_url: https://github.com/lanpa/tensorboard-pytorch
+  doc_url: https://tensorboardx.readthedocs.io/en/latest/
+  dev_url: https://github.com/lanpa/tensorboardx
 
 extra:
   recipe-maintainers:
