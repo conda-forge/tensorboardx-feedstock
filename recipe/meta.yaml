@@ -1,6 +1,6 @@
 {% set name = "tensorboardX" %}
-{% set version = "1.6" %}
-{% set sha256 = "f1422b3cba4458d7709804a2b74424b372d764ebe4c832125f07e9bc190feb9d" %}
+{% set version = "1.7" %}
+{% set sha256 = "f920d43cbe24c631fff94c89aad8f4568fe310e11f889cce4aadfa1760ebb85c" %}
 
 package:
   name: {{ name|lower }}
