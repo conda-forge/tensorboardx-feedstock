@@ -5,7 +5,7 @@ Home: https://github.com/lanpa/tensorboardx
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: tensorboard for pytorch
 
