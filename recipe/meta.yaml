@@ -1,6 +1,6 @@
 {% set name = "tensorboardX" %}
-{% set version = "2.1" %}
-{% set sha256 = "2556d5601eab25b8fafa20aa0ea36c9c307be225122e68d6047b558edc302fa3" %}
+{% set version = "2.2" %}
+{% set sha256 = "dff39191ca26bce9c5c82b9a013558e8c17602d17279f70270ca3341f127c4cf" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - pip
   run:
