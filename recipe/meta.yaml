@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.6
     - numpy
-    - protobuf >=3.2.0
+    - protobuf >=3.8.0
     - six
 
 test:
