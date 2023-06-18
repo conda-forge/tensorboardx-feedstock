@@ -21,6 +21,7 @@ requirements:
     - python >=3.8
     - pip
     - packaging
+    - setuptools
     - setuptools-scm
   run:
     - python >=3.8
