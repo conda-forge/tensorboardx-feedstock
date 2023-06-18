@@ -1,6 +1,6 @@
 {% set name = "tensorboardX" %}
-{% set version = "2.5.1" %}
-{% set sha256 = "eed6b8109d200e9c1529abe8a9f755894a5db9c82166bcaaf80c41a48398c6fe" %}
+{% set version = "2.6.1" %}
+{% set sha256 = "02e2b84d7dc102edb7a052c77041db30fd6ba9b990635178919b8e9cfa157e96" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/lanpa/{{ name }}/archive/v{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -18,13 +18,16 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
+    - packaging
+    - setuptools
+    - setuptools-scm
   run:
-    - python >=3.6
+    - python >=3.8
     - numpy
-    - protobuf >=3.8.0,<=3.20.1
-    - six
+    - packaging
+    - protobuf >=4.22.3
 
 test:
   imports:
