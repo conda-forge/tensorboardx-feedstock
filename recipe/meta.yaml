@@ -1,6 +1,6 @@
 {% set name = "tensorboardX" %}
 {% set version = "2.6.1" %}
-{% set sha256 = "ba68cd8e6440e5c3f3c591442c4a188b1fd77ce1eb8c5e8d50c512f08453e24b" %}
+{% set sha256 = "02e2b84d7dc102edb7a052c77041db30fd6ba9b990635178919b8e9cfa157e96" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/lanpa/{{ name }}/archive/v{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
