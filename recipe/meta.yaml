@@ -27,7 +27,7 @@ requirements:
     - python >=3.8
     - numpy
     - packaging
-    - protobuf >=4.22.3
+    - protobuf
 
 test:
   imports:
