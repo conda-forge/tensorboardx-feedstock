@@ -1,6 +1,6 @@
 {% set name = "tensorboardX" %}
-{% set version = "2.6.1" %}
-{% set sha256 = "02e2b84d7dc102edb7a052c77041db30fd6ba9b990635178919b8e9cfa157e96" %}
+{% set version = "2.6.2" %}
+{% set sha256 = "836cd33d751353494a6ac76aaeaa616a039e6594e1273467e7db99991624e31e" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +27,7 @@ requirements:
     - python >=3.8
     - numpy
     - packaging
-    - protobuf >=4.22.3
+    - protobuf
 
 test:
   imports:
