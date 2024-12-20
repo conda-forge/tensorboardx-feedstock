@@ -8,28 +8,30 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - packaging
     - setuptools
     - setuptools-scm
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numpy
     - packaging
     - protobuf >=3.20
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - tensorboardX
     - tensorboardX.crc32c
